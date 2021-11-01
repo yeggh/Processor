@@ -1,0 +1,252 @@
+ -- Copyright (C) 1991-2009 Altera Corporation
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, Altera MegaCore Function License 
+ -- Agreement, or other applicable license agreement, including, 
+ -- without limitation, that your use is for the sole purpose of 
+ -- programming logic devices manufactured by Altera and sold by 
+ -- Altera or its authorized distributors.  Please refer to the 
+ -- applicable agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ------------------------------------------------------------------------------
+
+
+
+ ------------------------------------------------------------------------------
+ -- NC         : No Connect. This pin has no internal connection to the device.
+ -- VCC_INT    : Dedicated power pin, which MUST be connected to VCC  (1.8V).
+ -- VCC_IO     : Dedicated power pin, which MUST be connected to VCC  (Refer to
+ --              the table below for voltage).
+ -- GND        : Dedicated ground pin, which MUST be connected to GND.
+ -- GND+       : Unused input. This pin should be connected to GND. It may also
+ --              be connected  to a  valid signal  on the board  (low, high, or
+ --              toggling)  if that signal is required for a different revision
+ --              of the design.
+ -- GND*       : Unused  I/O  pin.   This pin can either be left unconnected or
+ --              connected to GND.  Connecting this pin to GND will improve the
+ --              device's immunity to noise.
+ ------------------------------------------------------------------------------
+
+
+File Generation Date & Time: Sun Aug 02 20:54:10 2020
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
+CHIP  "CO_P_ALU"  ASSIGNED TO AN: EP20K200EQC208-1X
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+VCC_INT                      : 1         : power  :                   : 1.8V    :           :                
+GND*                         : 2         :        :                   :         : 3         :                
+VCC_INT                      : 3         : power  :                   : 1.8V    :           :                
+GND                          : 4         : gnd    :                   :         :           :                
+Read_Data_1[4]               : 5         : input  : 3.3-V LVTTL       :         : 3         : N              
+result[18]                   : 6         : output : 3.3-V LVTTL       :         : 3         : N              
+result[25]                   : 7         : output : 3.3-V LVTTL       :         : 3         : N              
+VCC_IO                       : 8         : power  :                   : 3.3V    :           :                
+result[29]                   : 9         : output : 3.3-V LVTTL       :         : 3         : N              
+GND_IO                       : 10        : gnd    :                   :         :           :                
+VCC_INT                      : 11        : power  :                   : 1.8V    :           :                
+GND                          : 12        : gnd    :                   :         :           :                
+Read_Data_1[1]               : 13        : input  : 3.3-V LVTTL       :         : 3         : N              
+Read_Data_1[15]              : 14        : input  : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : 15        :        :                   :         : 3         :                
+GND                          : 16        : gnd    :                   :         :           :                
+result[19]                   : 17        : output : 3.3-V LVTTL       :         : 3         : N              
+Read_Data_1[3]               : 18        : input  : 3.3-V LVTTL       :         : 3         : N              
+Read_Data_2[7]               : 19        : input  : 3.3-V LVTTL       :         : 3         : N              
+Read_Data_1[12]              : 20        : input  : 3.3-V LVTTL       :         : 3         : N              
+result[9]                    : 21        : output : 3.3-V LVTTL       :         : 3         : N              
+Read_Data_1[7]               : 22        : input  : 3.3-V LVTTL       :         : 3         : N              
+VCC_INT                      : 23        : power  :                   : 1.8V    :           :                
+GND                          : 24        : gnd    :                   :         :           :                
+MSEL0                        : 25        : input  :                   :         : 4         :                
+MSEL1                        : 26        : input  :                   :         : 4         :                
+GND+                         : 27        :        :                   :         : 4         :                
+VCC_INT                      : 28        :        :                   :         :           :                
+NCONFIG                      : 29        : input  :                   :         : 4         :                
+GND*                         : 30        :        :                   :         : 4         :                
+GND+                         : 31        :        :                   :         : 4         :                
+Read_Data_2[21]              : 32        : input  : 3.3-V LVTTL       :         : 4         : N              
+Read_Data_2[19]              : 33        : input  : 3.3-V LVTTL       :         : 4         : N              
+opcode[3]                    : 34        : input  : 3.3-V LVTTL       :         : 4         : N              
+GND                          : 35        : gnd    :                   :         :           :                
+VCC_INT                      : 36        : power  :                   : 1.8V    :           :                
+Read_Data_2[12]              : 37        : input  : 3.3-V LVTTL       :         : 4         : N              
+opcode[1]                    : 38        : input  : 3.3-V LVTTL       :         : 4         : N              
+GND                          : 39        : gnd    :                   :         :           :                
+Read_Data_2[20]              : 40        : input  : 3.3-V LVTTL       :         : 4         : N              
+Read_Data_2[29]              : 41        : input  : 3.3-V LVTTL       :         : 4         : N              
+VCC_IO                       : 42        : power  :                   : 3.3V    :           :                
+GND_IO                       : 43        : gnd    :                   :         :           :                
+result[14]                   : 44        : output : 3.3-V LVTTL       :         : 4         : N              
+Read_Data_2[30]              : 45        : input  : 3.3-V LVTTL       :         : 4         : N              
+Read_Data_2[14]              : 46        : input  : 3.3-V LVTTL       :         : 4         : N              
+GND                          : 47        : gnd    :                   :         :           :                
+VCC_INT                      : 48        : power  :                   : 1.8V    :           :                
+Read_Data_2[26]              : 49        : input  : 3.3-V LVTTL       :         : 4         : N              
+result[10]                   : 50        : output : 3.3-V LVTTL       :         : 4         : N              
+Read_Data_2[22]              : 51        : input  : 3.3-V LVTTL       :         : 4         : N              
+VCC_INT                      : 52        : power  :                   : 1.8V    :           :                
+VCC_IO                       : 53        : power  :                   : 3.3V    :           :                
+Read_Data_2[25]              : 54        : input  : 3.3-V LVTTL       :         : 5         : N              
+Read_Data_2[18]              : 55        : input  : 3.3-V LVTTL       :         : 5         : N              
+Read_Data_2[9]               : 56        : input  : 3.3-V LVTTL       :         : 5         : N              
+Read_Data_2[23]              : 57        : input  : 3.3-V LVTTL       :         : 5         : N              
+Read_Data_2[2]               : 58        : input  : 3.3-V LVTTL       :         : 5         : N              
+Read_Data_2[28]              : 59        : input  : 3.3-V LVTTL       :         : 5         : N              
+Read_Data_2[11]              : 60        : input  : 3.3-V LVTTL       :         : 5         : N              
+Read_Data_2[1]               : 61        : input  : 3.3-V LVTTL       :         : 5         : N              
+Read_Data_2[10]              : 62        : input  : 3.3-V LVTTL       :         : 5         : N              
+Read_Data_2[27]              : 63        : input  : 3.3-V LVTTL       :         : 5         : N              
+GND_IO                       : 64        : gnd    :                   :         :           :                
+Read_Data_2[8]               : 65        : input  : 3.3-V LVTTL       :         : 5         : N              
+Read_Data_2[13]              : 66        : input  : 3.3-V LVTTL       :         : 5         : N              
+Read_Data_2[17]              : 67        : input  : 3.3-V LVTTL       :         : 5         : N              
+Read_Data_2[24]              : 68        : input  : 3.3-V LVTTL       :         : 5         : N              
+Read_Data_2[31]              : 69        : input  : 3.3-V LVTTL       :         : 5         : N              
+Read_Data_2[16]              : 70        : input  : 3.3-V LVTTL       :         : 5         : N              
+Read_Data_2[5]               : 71        : input  : 3.3-V LVTTL       :         : 5         : N              
+Read_Data_2[15]              : 72        : input  : 3.3-V LVTTL       :         : 5         : N              
+Read_Data_2[6]               : 73        : input  : 3.3-V LVTTL       :         : 5         : N              
+Read_Data_2[0]               : 74        : input  : 3.3-V LVTTL       :         : 5         : N              
+TMS                          : 75        : input  :                   :         : 5         :                
+TCK                          : 76        : input  :                   :         : 5         :                
+GND+                         : 77        :        :                   :         : 5         :                
+GND                          : 78        : gnd    :                   :         :           :                
+VCC_INT                      : 79        : power  :                   : 1.8V    :           :                
+VCC_IO                       : 80        : power  :                   : 3.3V    :           :                
+GND+                         : 81        :        :                   :         : 5         :                
+NSTATUS                      : 82        : bidir  :                   :         : 5         :                
+CONF_DONE                    : 83        : bidir  :                   :         : 5         :                
+Read_Data_1[25]              : 84        : input  : 3.3-V LVTTL       :         : 6         : N              
+result[30]                   : 85        : output : 3.3-V LVTTL       :         : 6         : N              
+VCC_IO                       : 86        : power  :                   : 3.3V    :           :                
+Read_Data_1[19]              : 87        : input  : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : 88        :        :                   :         : 6         :                
+Read_Data_1[22]              : 89        : input  : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : 90        :        :                   :         : 6         :                
+Read_Data_1[24]              : 91        : input  : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : 92        :        :                   :         : 6         :                
+GND*                         : 93        :        :                   :         : 6         :                
+Read_Data_1[29]              : 94        : input  : 3.3-V LVTTL       :         : 6         : N              
+GND_IO                       : 95        : gnd    :                   :         :           :                
+Read_Data_1[23]              : 96        : input  : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : 97        :        :                   :         : 6         :                
+GND*                         : 98        :        :                   :         : 6         :                
+GND*                         : 99        :        :                   :         : 6         :                
+Read_Data_1[30]              : 100       : input  : 3.3-V LVTTL       :         : 6         : N              
+Read_Data_1[21]              : 101       : input  : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : 102       :        :                   :         : 6         :                
+Read_Data_1[16]              : 103       : input  : 3.3-V LVTTL       :         : 6         : N              
+Read_Data_1[26]              : 104       : input  : 3.3-V LVTTL       :         : 6         : N              
+VCC_INT                      : 105       : power  :                   : 1.8V    :           :                
+opcode[5]                    : 106       : input  : 3.3-V LVTTL       :         : 7         : N              
+result[3]                    : 107       : output : 3.3-V LVTTL       :         : 7         : N              
+result[12]                   : 108       : output : 3.3-V LVTTL       :         : 7         : N              
+VCC_INT                      : 109       : power  :                   : 1.8V    :           :                
+GND                          : 110       : gnd    :                   :         :           :                
+result[2]                    : 111       : output : 3.3-V LVTTL       :         : 7         : N              
+result[7]                    : 112       : output : 3.3-V LVTTL       :         : 7         : N              
+result[13]                   : 113       : output : 3.3-V LVTTL       :         : 7         : N              
+GND_IO                       : 114       : gnd    :                   :         :           :                
+VCC_IO                       : 115       : power  :                   : 3.3V    :           :                
+opcode[2]                    : 116       : input  : 3.3-V LVTTL       :         : 7         : N              
+result[5]                    : 117       : output : 3.3-V LVTTL       :         : 7         : N              
+GND                          : 118       : gnd    :                   :         :           :                
+result[4]                    : 119       : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : 120       :        :                   :         :           :                
+VCC_INT                      : 121       : power  :                   : 1.8V    :           :                
+GND_CKOUT2                   : 122       : gnd    :                   :         :           :                
+VCC_CKOUT2                   : 123       : power  :                   : 3.3V    :           :                
+result[1]                    : 124       : output : 3.3-V LVTTL       :         : 7         : N              
+VCC_CKLK2                    : 125       : power  :                   : 1.8V    :           :                
+VCC_INT                      : 126       : power  :                   : 1.8V    :           :                
+GND                          : 127       : gnd    :                   :         :           :                
+GND_CKLK2                    : 128       : gnd    :                   :         :           :                
+TDI                          : 129       : input  :                   :         : 8         :                
+nCE                          : 130       : input  :                   :         : 8         :                
+GND+                         : 131       :        :                   :         : 8         :                
+DCLK                         : 132       : bidir  :                   :         : 8         :                
+DATA0                        : 133       : input  :                   :         : 8         :                
+GND+                         : 134       :        :                   :         : 8         :                
+GND+                         : 135       :        :                   :         :           :                
+VCC_IO                       : 136       : power  :                   : 3.3V    :           :                
+result[8]                    : 137       : output : 3.3-V LVTTL       :         : 8         : N              
+result[6]                    : 138       : output : 3.3-V LVTTL       :         : 8         : N              
+GND_CKLK4                    : 139       : gnd    :                   :         :           :                
+VCC_CKLK4                    : 140       : power  :                   : 1.8V    :           :                
+result[20]                   : 141       : output : 3.3-V LVTTL       :         : 8         : N              
+result[26]                   : 142       : output : 3.3-V LVTTL       :         : 8         : N              
+GND                          : 143       : gnd    :                   :         :           :                
+result[16]                   : 144       : output : 3.3-V LVTTL       :         : 8         : N              
+result[21]                   : 145       : output : 3.3-V LVTTL       :         : 8         : N              
+result[27]                   : 146       : output : 3.3-V LVTTL       :         : 8         : N              
+GND                          : 147       : gnd    :                   :         :           :                
+VCC_INT                      : 148       : power  :                   : 1.8V    :           :                
+GND_IO                       : 149       : gnd    :                   :         :           :                
+result[23]                   : 150       : output : 3.3-V LVTTL       :         : 8         : N              
+result[17]                   : 151       : output : 3.3-V LVTTL       :         : 8         : N              
+Read_Data_1[14]              : 152       : input  : 3.3-V LVTTL       :         : 8         : N              
+GND                          : 153       : gnd    :                   :         :           :                
+VCC_INT                      : 154       : power  :                   : 1.8V    :           :                
+result[11]                   : 155       : output : 3.3-V LVTTL       :         : 8         : N              
+VCC_INT                      : 156       : power  :                   : 1.8V    :           :                
+GND*                         : 157       :        :                   :         : 1         :                
+result[0]                    : 158       : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : 159       :        :                   :         : 1         :                
+GND*                         : 160       :        :                   :         : 1         :                
+GND*                         : 161       :        :                   :         : 1         :                
+GND*                         : 162       :        :                   :         : 1         :                
+Read_Data_1[28]              : 163       : input  : 3.3-V LVTTL       :         : 1         : N              
+Read_Data_1[17]              : 164       : input  : 3.3-V LVTTL       :         : 1         : N              
+result[28]                   : 165       : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : 166       :        :                   :         : 1         :                
+opcode[4]                    : 167       : input  : 3.3-V LVTTL       :         : 1         : N              
+Read_Data_1[20]              : 168       : input  : 3.3-V LVTTL       :         : 1         : N              
+GND_IO                       : 169       : gnd    :                   :         :           :                
+Read_Data_1[18]              : 170       : input  : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : 171       :        :                   :         : 1         :                
+VCC_IO                       : 172       : power  :                   : 3.3V    :           :                
+result[22]                   : 173       : output : 3.3-V LVTTL       :         : 1         : N              
+Read_Data_1[27]              : 174       : input  : 3.3-V LVTTL       :         : 1         : N              
+Read_Data_1[31]              : 175       : input  : 3.3-V LVTTL       :         : 1         : N              
+result[24]                   : 176       : output : 3.3-V LVTTL       :         : 1         : N              
+result[31]                   : 177       : output : 3.3-V LVTTL       :         : 1         : N              
+result[15]                   : 178       : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : 179       :        :                   :         : 1         :                
+TDO                          : 180       : output :                   :         : 1         :                
+GND+                         : 181       :        :                   :         : 1         :                
+VCC_INT                      : 182       : power  :                   : 1.8V    :           :                
+GND                          : 183       : gnd    :                   :         :           :                
+GND+                         : 184       :        :                   :         : 1         :                
+nCEO                         : 185       : output :                   :         : 1         :                
+TRST                         : 186       : input  :                   :         : 1         :                
+GND*                         : 187       :        :                   :         : 2         :                
+Read_Data_1[5]               : 188       : input  : 3.3-V LVTTL       :         : 2         : N              
+VCC_IO                       : 189       : power  :                   : 3.3V    :           :                
+GND*                         : 190       :        :                   :         : 2         :                
+Read_Data_1[0]               : 191       : input  : 3.3-V LVTTL       :         : 2         : N              
+Read_Data_1[10]              : 192       : input  : 3.3-V LVTTL       :         : 2         : N              
+Read_Data_1[11]              : 193       : input  : 3.3-V LVTTL       :         : 2         : N              
+Read_Data_2[3]               : 194       : input  : 3.3-V LVTTL       :         : 2         : N              
+opcode[0]                    : 195       : input  : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 196       :        :                   :         : 2         :                
+Read_Data_1[13]              : 197       : input  : 3.3-V LVTTL       :         : 2         : N              
+Read_Data_1[9]               : 198       : input  : 3.3-V LVTTL       :         : 2         : N              
+GND_IO                       : 199       : gnd    :                   :         :           :                
+GND*                         : 200       :        :                   :         : 2         :                
+GND*                         : 201       :        :                   :         : 2         :                
+Read_Data_1[8]               : 202       : input  : 3.3-V LVTTL       :         : 2         : N              
+Read_Data_2[4]               : 203       : input  : 3.3-V LVTTL       :         : 2         : N              
+Read_Data_1[6]               : 204       : input  : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 205       :        :                   :         : 2         :                
+GND*                         : 206       :        :                   :         : 2         :                
+Read_Data_1[2]               : 207       : input  : 3.3-V LVTTL       :         : 2         : N              
+VCC_IO                       : 208       : power  :                   : 3.3V    :           :                
