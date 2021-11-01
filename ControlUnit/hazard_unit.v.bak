@@ -1,0 +1,110 @@
+module hazard_unit(
+	instruction,
+	read_reg1,
+	read_reg2,
+	EX_opcode,
+	ID_Write_reg,
+	EX_Write_reg,
+	MEM_Write_reg,
+	WB_Write_reg,
+	pc_src,
+	IF_flush,
+	PC_write,
+	IFID_write,
+	bubble
+	);
+
+	input [31:0] instruction;
+	input [5:0] EX_opcode;
+	input [1:0] pc_src;
+	input [4:0]	ID_Write_reg,
+		EX_Write_reg,
+		MEM_Write_reg,
+		WB_Write_reg,
+		read_reg1,
+		read_reg2;
+
+
+	output reg PC_write, IF_flush, bubble, IFID_write;
+
+
+	always @(instruction, 
+	read_reg1,
+	read_reg2,
+	EX_opcode,
+	ID_Write_reg,
+	EX_Write_reg,
+	MEM_Write_reg,
+	WB_Write_reg,
+	pc_src) begin
+		IF_flush = 1'b0;
+		PC_write = 1'b1;
+		bubble = 1'b0;
+		IFID_write = 1'b1;
+		casez(instruction[31:26])
+			6'b011???: begin 	//branch
+				IF_flush = 1'b1;
+				PC_write = 1'b0;
+				if(instruction[31:26] != 6'b011100)
+				begin
+					if(read_reg1 == EX_Write_reg || read_reg1 == MEM_Write_reg || read_reg1 == WB_Write_reg)
+					begin
+						PC_write = 1'b0;
+						bubble = 1'b1;
+						IFID_write = 1'b0;
+					end
+					if(instruction[31:26] != 6'b011101)
+					begin
+						if(read_reg2 == EX_Write_reg || read_reg2 == MEM_Write_reg || read_reg2 == WB_Write_reg)
+						begin
+							PC_write = 1'b0;
+							bubble = 1'b1;
+							IFID_write = 1'b0;
+						end
+					end
+				end
+			end
+			6'b000000: begin
+			end
+			//data hazards
+			6'b00????: begin
+				if(read_reg1 == EX_Write_reg || read_reg1 == MEM_Write_reg || read_reg1 == WB_Write_reg)
+				begin
+					PC_write = 1'b0;
+					bubble = 1'b1;
+					IFID_write = 1'b0;
+				end
+				if(instruction[31:26] != 6'b001000 && instruction[31:26] != 6'b001011
+					&& instruction[31:26] != 6'b001100 && instruction[31:26] != 6'b001101
+					&& instruction[31:26] != 6'b001110)
+				begin
+					if(read_reg2 == EX_Write_reg || read_reg2 == MEM_Write_reg || read_reg2 == WB_Write_reg)
+					begin
+						PC_write = 1'b0;
+						bubble = 1'b1;
+						IFID_write = 1'b0;
+					end
+				end
+			end
+			6'b01000?: begin
+			end
+			6'b010???: begin
+				if(read_reg1 == EX_Write_reg || read_reg1 == MEM_Write_reg || read_reg1 == WB_Write_reg)
+				begin
+					PC_write = 1'b0;
+					bubble = 1'b1;
+					IFID_write = 1'b0;
+				end
+			end
+
+		endcase
+			
+		casez(EX_opcode)
+			6'b011???: begin
+				if(pc_src != 2'b00)
+					IF_flush = 1'b1;
+			end
+		endcase
+	end
+
+endmodule
