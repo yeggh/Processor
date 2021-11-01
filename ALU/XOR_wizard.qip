@@ -1,0 +1,7 @@
+set_global_assignment -name IP_TOOL_NAME "LPM_XOR"
+set_global_assignment -name IP_TOOL_VERSION "9.0"
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "XOR_wizard.tdf"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "XOR_wizard.bsf"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "XOR_wizard.inc"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "XOR_wizard.cmp"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "XOR_wizard_syn.v"]
