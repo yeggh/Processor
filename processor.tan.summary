@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 9.838 ns
+From           : Address[0]
+To             : memory3:inst3|altdpram:altdpram_component|q[3]~reg_we
+From Clock     : --
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 21.031 ns
+From           : memory3:inst|altdpram:altdpram_component|q[7]~mem_cell_ra
+To             : ReadData[12]
+From Clock     : Address[0]
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 18.462 ns
+From           : Address[10]
+To             : ReadData[12]
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 3.681 ns
+From           : Address[9]
+To             : memory3:inst3|altdpram:altdpram_component|q[6]~mem_cell_ra
+From Clock     : --
+To Clock       : Address[0]
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

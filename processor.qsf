@@ -1,0 +1,1052 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.0 Build 132 02/25/2009 SJ Web Edition
+# Date created = 21:02:50  July 08, 2020
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		processor_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Stratix III"
+set_global_assignment -name DEVICE AUTO
+set_global_assignment -name TOP_LEVEL_ENTITY device
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:02:50  JULY 08, 2020"
+set_global_assignment -name LAST_QUARTUS_VERSION 9.0
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name OPTIMIZE_HOLD_TIMING "IO PATHS AND MINIMUM TPD PATHS"
+set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
+set_global_assignment -name INCREMENTAL_COMPILATION OFF
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR simulation/modelsim -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH datapath_tb -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME datapath_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME i1 -section_id datapath_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME datapath_tb -section_id datapath_tb
+set_global_assignment -name CHECK_OUTPUTS OFF
+set_global_assignment -name SIMULATION_VECTOR_COMPARE_BEGIN_TIME "0 ns"
+set_global_assignment -name SIMULATION_VECTOR_COMPARE_END_TIME "1000 ns"
+set_global_assignment -name SIMULATION_VECTOR_COMPARE_RULE_FOR_0 "0,L,DC"
+set_global_assignment -name SIMULATION_VECTOR_COMPARE_RULE_FOR_1 "1,H,DC"
+set_global_assignment -name SIMULATION_VECTOR_COMPARE_RULE_FOR_X "X,W,Z,U,DC"
+set_global_assignment -name SIMULATION_VECTOR_COMPARE_RULE_FOR_L "0,L,DC"
+set_global_assignment -name SIMULATION_VECTOR_COMPARE_RULE_FOR_H "1,H,DC"
+set_global_assignment -name SIMULATION_VECTOR_COMPARE_RULE_FOR_W "X,W,Z,U,DC"
+set_global_assignment -name SIMULATION_VECTOR_COMPARE_RULE_FOR_Z "Z,U,DC"
+set_global_assignment -name SIMULATION_VECTOR_COMPARE_RULE_FOR_U "X,W,Z,U,DC"
+set_global_assignment -name SIMULATION_VECTOR_COMPARE_RULE_FOR_DC "0,1,X,L,H,W,Z,U,DC"
+set_global_assignment -name ADD_DEFAULT_PINS_TO_SIMULATION_OUTPUT_WAVEFORMS ON
+set_global_assignment -name EDA_USER_COMPILED_SIMULATION_LIBRARY_DIRECTORY "\\\\Mac\\Home\\Desktop\\University\\CA\\Project\\processor\\New folder" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/Datapath.vt -section_id datapath_tb
+set_global_assignment -name END_TIME "5 us"
+set_global_assignment -name VHDL_FILE Coprocessor/ADD_SUB16bits.vhd
+set_global_assignment -name VHDL_FILE Coprocessor/CMP.vhd
+set_global_assignment -name VHDL_FILE Coprocessor/const_1.vhd
+set_global_assignment -name VHDL_FILE Coprocessor/const_2.vhd
+set_global_assignment -name VHDL_FILE Coprocessor/const_3.vhd
+set_global_assignment -name VHDL_FILE Coprocessor/const_6.vhd
+set_global_assignment -name VHDL_FILE Coprocessor/constant_0_4bits.vhd
+set_global_assignment -name VHDL_FILE Coprocessor/constant_0_8bits.vhd
+set_global_assignment -name VHDL_FILE Coprocessor/constant_0_32bits.vhd
+set_global_assignment -name VHDL_FILE Coprocessor/constant_1_16bits.vhd
+set_global_assignment -name VHDL_FILE Coprocessor/constant_1_32bits.vhd
+set_global_assignment -name VHDL_FILE Coprocessor/constant_2.vhd
+set_global_assignment -name VHDL_FILE Coprocessor/constant_3.vhd
+set_global_assignment -name VHDL_FILE Coprocessor/constant_6.vhd
+set_global_assignment -name VHDL_FILE Coprocessor/divider_24bits.vhd
+set_global_assignment -name VHDL_FILE Coprocessor/MUL_16bits.vhd
+set_global_assignment -name VHDL_FILE Coprocessor/MUX_2_1_16bits.vhd
+set_global_assignment -name VHDL_FILE Coprocessor/MUX_2_1_32bits.vhd
+set_global_assignment -name VHDL_FILE Coprocessor/opcode_sub.vhd
+set_global_assignment -name VHDL_FILE Coprocessor/result_16entry_MUX.vhd
+set_global_assignment -name VHDL_FILE Coprocessor/result_18entry_MUX.vhd
+set_global_assignment -name VHDL_FILE Coprocessor/sqrt.vhd
+set_global_assignment -name VHDL_FILE Coprocessor/wizard_const_adder.vhd
+set_global_assignment -name VHDL_FILE Coprocessor/wizard_divider_16bits.vhd
+set_global_assignment -name BDF_FILE Coprocessor/CO_P_ALU.bdf
+set_global_assignment -name BDF_FILE Coprocessor/exp_to_pf_converter.bdf
+set_global_assignment -name BDF_FILE Coprocessor/pf_to_exp_converter.bdf
+set_global_assignment -name AHDL_FILE RF/Register5.tdf
+set_global_assignment -name BSF_FILE RF/Register4.bsf
+set_global_assignment -name AHDL_FILE RF/Register4.tdf
+set_global_assignment -name BSF_FILE RF/Register2.bsf
+set_global_assignment -name AHDL_FILE RF/Register2.tdf
+set_global_assignment -name AHDL_FILE RF/Register3.tdf
+set_global_assignment -name BSF_FILE RF/Register3.bsf
+set_global_assignment -name BDF_FILE Datapath/Datapath.bdf
+set_global_assignment -name VERILOG_FILE ControlUnit/control_unit.v
+set_global_assignment -name VHDL_FILE ALU/opcode_0_wizard.vhd
+set_global_assignment -name VHDL_FILE ALU/opcode_MUX_wizard.vhd
+set_global_assignment -name AHDL_FILE ALU/AND_wizard.tdf
+set_global_assignment -name AHDL_FILE ALU/Ground.tdf
+set_global_assignment -name AHDL_FILE ALU/Ground_lpm_constant_r09.tdf
+set_global_assignment -name AHDL_FILE ALU/NOT_wizard.tdf
+set_global_assignment -name AHDL_FILE ALU/XOR_wizard.tdf
+set_global_assignment -name VHDL_FILE ALU/ADD_SUB_wizard.vhd
+set_global_assignment -name VHDL_FILE ALU/CMP_wizard.vhd
+set_global_assignment -name VHDL_FILE ALU/const_16.vhd
+set_global_assignment -name VHDL_FILE ALU/DIV_wizard.vhd
+set_global_assignment -name VHDL_FILE ALU/final_MUX_wizard.vhd
+set_global_assignment -name VHDL_FILE ALU/MULT_wizard.vhd
+set_global_assignment -name VHDL_FILE ALU/MUX_2_1_1.vhd
+set_global_assignment -name VHDL_FILE ALU/MUX_31bits_wizard.vhd
+set_global_assignment -name VHDL_FILE ALU/MUX_wizard.vhd
+set_global_assignment -name VHDL_FILE ALU/ROTATE_wizard.vhd
+set_global_assignment -name VHDL_FILE ALU/SHIFT_wizard.vhd
+set_global_assignment -name BSF_FILE ALU/ADD_SUB_wizard.bsf
+set_global_assignment -name BSF_FILE ALU/AND_wizard.bsf
+set_global_assignment -name BSF_FILE ALU/CMP_wizard.bsf
+set_global_assignment -name BSF_FILE ALU/const_16.bsf
+set_global_assignment -name BSF_FILE ALU/DIV_wizard.bsf
+set_global_assignment -name BSF_FILE ALU/final_MUX_wizard.bsf
+set_global_assignment -name BSF_FILE ALU/Ground.bsf
+set_global_assignment -name BSF_FILE ALU/MULT_wizard.bsf
+set_global_assignment -name BSF_FILE ALU/MUX_2_1_1.bsf
+set_global_assignment -name BSF_FILE ALU/MUX_31bits_wizard.bsf
+set_global_assignment -name BSF_FILE ALU/MUX_wizard.bsf
+set_global_assignment -name BSF_FILE ALU/NOT_wizard.bsf
+set_global_assignment -name BSF_FILE ALU/ROTATE_wizard.bsf
+set_global_assignment -name BSF_FILE ALU/SHIFT_wizard.bsf
+set_global_assignment -name BSF_FILE ALU/XOR_wizard.bsf
+set_global_assignment -name QIP_FILE ALU/ADD_SUB_wizard.qip
+set_global_assignment -name QIP_FILE ALU/AND_wizard.qip
+set_global_assignment -name QIP_FILE ALU/CMP_wizard.qip
+set_global_assignment -name QIP_FILE ALU/const_16.qip
+set_global_assignment -name QIP_FILE ALU/DIV_wizard.qip
+set_global_assignment -name QIP_FILE ALU/final_MUX_wizard.qip
+set_global_assignment -name QIP_FILE ALU/Ground.qip
+set_global_assignment -name QIP_FILE ALU/MULT_wizard.qip
+set_global_assignment -name QIP_FILE ALU/MUX_2_1_1.qip
+set_global_assignment -name QIP_FILE ALU/MUX_31bits_wizard.qip
+set_global_assignment -name QIP_FILE ALU/MUX_wizard.qip
+set_global_assignment -name QIP_FILE ALU/NOT_wizard.qip
+set_global_assignment -name QIP_FILE ALU/ROTATE_wizard.qip
+set_global_assignment -name QIP_FILE ALU/SHIFT_wizard.qip
+set_global_assignment -name QIP_FILE ALU/XOR_wizard.qip
+set_global_assignment -name QIP_FILE ALU/Wizard/ADD_SUB_wizard.qip
+set_global_assignment -name QIP_FILE ALU/Wizard/CMP_wizard.qip
+set_global_assignment -name QIP_FILE ALU/Wizard/DIV_wizard.qip
+set_global_assignment -name QIP_FILE ALU/Wizard/MULT_wizard.qip
+set_global_assignment -name QIP_FILE ALU/Wizard/MUX_1.qip
+set_global_assignment -name QIP_FILE ALU/Wizard/MUX_wizard.qip
+set_global_assignment -name QIP_FILE ALU/Wizard/ROTATE_wizard.qip
+set_global_assignment -name QIP_FILE ALU/Wizard/SHIFT_wizard.qip
+set_global_assignment -name SOURCE_FILE ALU/Wizard/MUX_1.cmp
+set_global_assignment -name SOURCE_FILE ALU/ADD_SUB_wizard.cmp
+set_global_assignment -name SOURCE_FILE ALU/AND_wizard.cmp
+set_global_assignment -name SOURCE_FILE ALU/CMP_wizard.cmp
+set_global_assignment -name SOURCE_FILE ALU/const_16.cmp
+set_global_assignment -name SOURCE_FILE ALU/DIV_wizard.cmp
+set_global_assignment -name SOURCE_FILE ALU/final_MUX_wizard.cmp
+set_global_assignment -name SOURCE_FILE ALU/Ground.cmp
+set_global_assignment -name SOURCE_FILE ALU/MULT_wizard.cmp
+set_global_assignment -name SOURCE_FILE ALU/MUX_2_1_1.cmp
+set_global_assignment -name SOURCE_FILE ALU/MUX_31bits_wizard.cmp
+set_global_assignment -name SOURCE_FILE ALU/MUX_wizard.cmp
+set_global_assignment -name SOURCE_FILE ALU/NOT_wizard.cmp
+set_global_assignment -name SOURCE_FILE ALU/ROTATE_wizard.cmp
+set_global_assignment -name SOURCE_FILE ALU/SHIFT_wizard.cmp
+set_global_assignment -name SOURCE_FILE ALU/XOR_wizard.cmp
+set_global_assignment -name BDF_FILE ALU/ALU.bdf
+set_global_assignment -name VERILOG_FILE memory/memory2.v
+set_global_assignment -name VERILOG_FILE memory/mux3.v
+set_global_assignment -name VERILOG_FILE memory/mux2.v
+set_global_assignment -name VERILOG_FILE memory/decoder1.v
+set_global_assignment -name VERILOG_FILE memory/i_memory1.v
+set_global_assignment -name VERILOG_FILE memory/mux1.v
+set_global_assignment -name SOURCE_FILE memory/decoder1.cmp
+set_global_assignment -name SOURCE_FILE memory/mux1.cmp
+set_global_assignment -name SOURCE_FILE memory/mux2.cmp
+set_global_assignment -name SOURCE_FILE memory/mux3.cmp
+set_global_assignment -name BDF_FILE memory/instructionMemory.bdf
+set_global_assignment -name BDF_FILE memory/memory.bdf
+set_global_assignment -name AHDL_FILE RF/Decoder.tdf
+set_global_assignment -name AHDL_FILE RF/MUX_32.tdf
+set_global_assignment -name AHDL_FILE RF/Register.tdf
+set_global_assignment -name BDF_FILE RF/WriteandReadRegisters.bdf
+set_global_assignment -name BDF_FILE RF/Registers.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE RF/test/rf.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE RF/test/rf2.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE RF/test/rf3.vwf
+set_global_assignment -name QIP_FILE Datapath/add1.qip
+set_global_assignment -name QIP_FILE Datapath/add2.qip
+set_global_assignment -name QIP_FILE ALU/or32.qip
+set_global_assignment -name QIP_FILE Datapath/mux5.qip
+set_global_assignment -name QIP_FILE Datapath/mux4_32.qip
+set_global_assignment -name QIP_FILE memory/memory3.qip
+set_global_assignment -name BDF_FILE memory/memory_asli.bdf
+set_global_assignment -name MIF_FILE memory/memory_init2.mif
+set_global_assignment -name VECTOR_WAVEFORM_FILE Datapath/datapath_test.vwf
+set_global_assignment -name MIF_FILE memory/testFiles/memory_init3.mif
+set_global_assignment -name MIF_FILE memory/testFiles/memory_init4.mif
+set_global_assignment -name QIP_FILE ALU/mult1.qip
+set_global_assignment -name QIP_FILE ALU/xor1.qip
+set_global_assignment -name QIP_FILE ALU/const_30.qip
+set_global_assignment -name QIP_FILE ALU/const_31.qip
+set_global_assignment -name QIP_FILE ALU/OR5_1.qip
+set_global_assignment -name MIF_FILE memory/testFiles/fib.mif
+set_global_assignment -name QIP_FILE RF/Register.qip
+set_global_assignment -name QIP_FILE RF/Register2.qip
+set_global_assignment -name QIP_FILE RF/Register3.qip
+set_global_assignment -name VERILOG_FILE ControlUnit/hazard_unit.v
+set_global_assignment -name QIP_FILE Datapath/mux_31_2.qip
+set_global_assignment -name QIP_FILE RF/Register4.qip
+set_global_assignment -name QIP_FILE Datapath/mux_17_2.qip
+set_global_assignment -name QIP_FILE Datapath/sub1.qip
+set_global_assignment -name QIP_FILE RF/Register5.qip
+set_global_assignment -name VERILOG_FILE ControlUnit/forwarding_unit.v
+set_global_assignment -name QIP_FILE memory/mux_32_3_1.qip
+set_global_assignment -name BDF_FILE Coprocessor/Coprocessor.bdf
+set_global_assignment -name VERILOG_FILE Coprocessor/ControlUnit/cp_control_unit.v
+set_global_assignment -name QIP_FILE Coprocessor/Adder_normal.qip
+set_global_assignment -name BDF_FILE Datapath/outputPorts.bdf
+set_global_assignment -name QIP_FILE Datapath/mux_1_2.qip
+set_global_assignment -name MIF_FILE memory/testFiles/tinyTest.mif
+set_global_assignment -name MIF_FILE memory/testFiles/coprocessor_test.mif
+set_global_assignment -name MIF_FILE memory/testFiles/coprocessor_test_2.mif
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to clock
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL ON -to clock
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to reset
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL ON -to reset
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[31]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[31]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[30]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[30]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[29]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[29]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[28]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[28]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[27]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[27]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[26]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[26]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[25]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[25]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[24]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[24]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[23]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[23]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[22]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[22]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[21]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[21]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[20]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[20]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[19]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[19]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[18]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[18]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[17]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[17]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[16]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[16]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[15]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[15]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[14]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[14]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[13]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[13]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[12]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[12]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[11]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[11]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[10]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[10]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[9]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[9]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[8]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[8]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[7]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[7]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[6]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[6]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[5]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[5]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[4]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[4]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[3]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[3]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[2]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[2]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[1]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[1]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to ALU_result[0]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to ALU_result[0]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to branch
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to branch
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[31]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[31]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[30]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[30]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[29]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[29]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[28]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[28]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[27]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[27]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[26]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[26]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[25]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[25]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[24]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[24]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[23]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[23]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[22]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[22]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[21]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[21]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[20]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[20]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[19]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[19]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[18]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[18]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[17]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[17]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[16]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[16]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[15]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[15]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[14]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[14]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[13]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[13]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[12]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[12]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[11]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[11]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[10]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[10]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[9]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[9]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[8]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[8]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[7]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[7]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[6]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[6]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[5]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[5]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[4]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[4]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[3]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[3]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[2]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[2]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[1]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[1]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data1[0]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data1[0]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[31]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[31]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[30]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[30]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[29]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[29]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[28]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[28]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[27]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[27]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[26]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[26]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[25]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[25]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[24]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[24]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[23]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[23]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[22]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[22]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[21]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[21]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[20]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[20]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[19]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[19]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[18]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[18]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[17]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[17]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[16]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[16]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[15]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[15]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[14]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[14]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[13]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[13]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[12]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[12]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[11]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[11]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[10]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[10]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[9]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[9]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[8]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[8]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[7]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[7]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[6]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[6]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[5]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[5]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[4]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[4]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[3]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[3]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[2]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[2]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[1]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[1]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Data2[0]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Data2[0]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[31]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[31]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[30]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[30]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[29]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[29]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[28]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[28]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[27]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[27]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[26]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[26]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[25]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[25]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[24]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[24]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[23]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[23]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[22]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[22]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[21]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[21]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[20]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[20]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[19]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[19]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[18]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[18]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[17]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[17]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[16]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[16]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[15]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[15]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[14]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[14]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[13]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[13]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[12]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[12]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[11]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[11]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[10]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[10]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[9]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[9]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[8]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[8]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[7]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[7]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[6]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[6]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[5]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[5]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[4]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[4]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[3]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[3]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[2]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[2]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[1]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[1]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Instruction[0]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Instruction[0]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[31]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[31]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[30]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[30]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[29]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[29]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[28]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[28]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[27]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[27]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[26]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[26]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[25]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[25]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[24]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[24]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[23]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[23]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[22]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[22]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[21]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[21]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[20]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[20]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[19]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[19]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[18]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[18]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[17]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[17]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[16]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[16]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[15]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[15]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[14]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[14]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[13]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[13]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[12]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[12]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[11]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[11]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[10]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[10]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[9]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[9]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[8]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[8]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[7]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[7]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[6]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[6]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[5]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[5]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[4]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[4]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[3]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[3]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[2]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[2]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[1]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[1]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to Memory_data[0]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to Memory_data[0]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[31]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[31]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[30]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[30]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[29]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[29]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[28]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[28]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[27]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[27]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[26]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[26]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[25]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[25]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[24]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[24]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[23]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[23]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[22]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[22]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[21]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[21]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[20]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[20]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[19]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[19]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[18]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[18]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[17]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[17]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[16]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[16]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[15]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[15]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[14]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[14]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[13]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[13]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[12]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[12]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[11]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[11]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[10]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[10]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[9]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[9]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[8]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[8]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[7]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[7]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[6]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[6]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[5]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[5]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[4]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[4]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[3]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[3]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[2]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[2]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[1]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[1]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to PC[0]
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to PC[0]
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[31]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[31]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[30]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[30]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[29]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[29]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[28]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[28]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[27]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[27]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[26]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[26]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[25]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[25]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[24]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[24]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[23]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[23]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[22]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[22]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[21]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[21]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[20]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[20]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[19]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[19]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[18]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[18]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[17]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[17]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[16]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[16]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[15]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[15]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[14]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[14]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[13]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[13]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[12]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[12]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[11]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[11]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[10]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[10]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[9]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[9]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[8]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[8]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[7]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[7]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[6]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[6]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[5]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[5]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[4]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[4]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[3]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[3]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[2]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[2]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[1]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[1]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_0[0]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_0[0]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[31]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[31]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[30]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[30]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[29]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[29]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[28]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[28]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[27]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[27]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[26]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[26]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[25]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[25]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[24]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[24]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[23]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[23]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[22]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[22]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[21]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[21]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[20]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[20]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[19]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[19]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[18]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[18]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[17]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[17]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[16]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[16]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[15]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[15]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[14]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[14]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[13]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[13]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[12]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[12]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[11]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[11]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[10]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[10]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[9]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[9]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[8]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[8]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[7]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[7]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[6]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[6]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[5]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[5]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[4]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[4]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[3]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[3]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[2]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[2]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[1]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[1]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_1[0]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_1[0]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[31]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[31]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[30]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[30]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[29]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[29]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[28]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[28]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[27]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[27]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[26]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[26]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[25]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[25]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[24]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[24]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[23]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[23]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[22]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[22]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[21]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[21]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[20]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[20]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[19]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[19]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[18]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[18]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[17]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[17]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[16]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[16]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[15]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[15]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[14]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[14]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[13]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[13]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[12]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[12]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[11]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[11]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[10]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[10]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[9]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[9]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[8]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[8]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[7]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[7]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[6]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[6]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[5]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[5]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[4]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[4]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[3]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[3]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[2]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[2]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[1]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[1]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_2[0]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_2[0]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[31]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[31]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[30]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[30]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[29]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[29]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[28]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[28]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[27]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[27]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[26]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[26]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[25]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[25]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[24]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[24]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[23]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[23]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[22]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[22]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[21]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[21]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[20]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[20]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[19]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[19]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[18]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[18]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[17]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[17]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[16]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[16]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[15]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[15]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[14]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[14]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[13]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[13]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[12]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[12]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[11]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[11]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[10]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[10]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[9]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[9]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[8]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[8]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[7]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[7]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[6]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[6]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[5]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[5]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[4]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[4]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[3]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[3]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[2]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[2]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[1]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[1]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_3[0]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_3[0]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[31]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[31]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[30]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[30]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[29]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[29]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[28]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[28]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[27]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[27]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[26]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[26]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[25]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[25]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[24]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[24]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[23]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[23]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[22]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[22]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[21]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[21]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[20]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[20]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[19]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[19]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[18]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[18]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[17]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[17]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[16]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[16]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[15]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[15]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[14]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[14]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[13]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[13]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[12]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[12]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[11]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[11]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[10]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[10]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[9]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[9]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[8]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[8]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[7]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[7]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[6]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[6]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[5]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[5]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[4]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[4]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[3]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[3]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[2]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[2]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[1]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[1]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_4[0]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_4[0]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[31]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[31]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[30]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[30]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[29]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[29]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[28]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[28]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[27]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[27]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[26]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[26]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[25]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[25]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[24]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[24]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[23]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[23]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[22]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[22]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[21]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[21]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[20]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[20]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[19]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[19]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[18]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[18]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[17]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[17]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[16]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[16]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[15]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[15]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[14]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[14]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[13]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[13]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[12]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[12]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[11]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[11]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[10]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[10]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[9]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[9]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[8]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[8]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[7]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[7]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[6]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[6]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[5]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[5]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[4]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[4]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[3]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[3]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[2]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[2]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[1]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[1]"
+set_instance_assignment -name SIMULATION_COMPARE_SIGNAL ON -to "WriteandReadRegisters:inst2|out_reg_5[0]"
+set_instance_assignment -name TRIGGER_VECTOR_COMPARE_ON_SIGNAL OFF -to "WriteandReadRegisters:inst2|out_reg_5[0]"
+set_instance_assignment -name PRESERVE_REGISTER ON -to ALU_result
+set_instance_assignment -name ADD_TO_SIMULATION_OUTPUT_WAVEFORMS ON -to Data1
+set_instance_assignment -name SIM_TAP_REGISTER_D_Q_PORTS ON -to Data2
+set_global_assignment -name QIP_FILE memory/memory4.qip
+set_global_assignment -name BDF_FILE memory/memory_asli2.bdf
+set_global_assignment -name MIF_FILE memory/testFiles/memory_init5.mif
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE device_test.vwf
+set_global_assignment -name BDF_FILE Device/device.bdf

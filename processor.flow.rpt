@@ -1,0 +1,309 @@
+Flow report for processor
+Wed Aug 05 20:20:45 2020
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Flow Summary                                                            ;
++-------------------------------+-----------------------------------------+
+; Flow Status                   ; Successful - Wed Aug 05 20:20:45 2020   ;
+; Quartus II Version            ; 9.0 Build 132 02/25/2009 SJ Web Edition ;
+; Revision Name                 ; processor                               ;
+; Top-level Entity Name         ; device                                  ;
+; Family                        ; Stratix III                             ;
+; Met timing requirements       ; N/A                                     ;
+; Logic utilization             ; 31 %                                    ;
+;     Combinational ALUTs       ; 9,749 / 38,000 ( 26 % )                 ;
+;     Memory ALUTs              ; 0 / 19,000 ( 0 % )                      ;
+;     Dedicated logic registers ; 2,428 / 38,000 ( 6 % )                  ;
+; Total registers               ; 2428                                    ;
+; Total pins                    ; 196 / 296 ( 66 % )                      ;
+; Total virtual pins            ; 0                                       ;
+; Total block memory bits       ; 524,288 / 1,880,064 ( 28 % )            ;
+; DSP block 18-bit elements     ; 52 / 216 ( 24 % )                       ;
+; Total PLLs                    ; 0 / 4 ( 0 % )                           ;
+; Total DLLs                    ; 0 / 4 ( 0 % )                           ;
+; Device                        ; EP3SL50F484C2                           ;
+; Timing Models                 ; Final                                   ;
++-------------------------------+-----------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 08/05/2020 20:08:33 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; processor           ;
++-------------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                             ;
++------------------------------------------------+---------------------------------------------------------------+------------------------------+-------------+----------------+
+; Assignment Name                                ; Value                                                         ; Default Value                ; Entity Name ; Section Id     ;
++------------------------------------------------+---------------------------------------------------------------+------------------------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID                          ; 121373770236.159664191310168                                  ; --                           ; --          ; --             ;
+; EDA_DESIGN_INSTANCE_NAME                       ; i1                                                            ; --                           ; --          ; datapath_tb    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST                ; On                                                            ; --                           ; --          ; eda_simulation ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH           ; datapath_tb                                                   ; --                           ; --          ; eda_simulation ;
+; EDA_NETLIST_WRITER_OUTPUT_DIR                  ; simulation/modelsim                                           ; --                           ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT                         ; Verilog Hdl                                                   ; --                           ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                            ; ModelSim (Verilog)                                            ; <None>                       ; --          ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS                   ; TEST_BENCH_MODE                                               ; --                           ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                            ; simulation/modelsim/Datapath.vt                               ; --                           ; --          ; datapath_tb    ;
+; EDA_TEST_BENCH_MODULE_NAME                     ; datapath_tb                                                   ; --                           ; --          ; datapath_tb    ;
+; EDA_TEST_BENCH_NAME                            ; datapath_tb                                                   ; --                           ; --          ; eda_simulation ;
+; EDA_TIME_SCALE                                 ; 1 ps                                                          ; --                           ; --          ; eda_simulation ;
+; EDA_USER_COMPILED_SIMULATION_LIBRARY_DIRECTORY ; \\Mac\Home\Desktop\University\CA\Project\processor\New folder ; --                           ; --          ; eda_simulation ;
+; FITTER_EFFORT                                  ; Standard Fit                                                  ; Auto Fit                     ; --          ; --             ;
+; INCREMENTAL_COMPILATION                        ; Off                                                           ; FULL_INCREMENTAL_COMPILATION ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_ADD_SUB                                                   ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_AND                                                       ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_COMPARE                                                   ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_CONSTANT                                                  ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_DIVIDE                                                    ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_MUX                                                       ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_CONSTANT                                                  ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_MULT                                                      ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_MUX                                                       ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_MUX                                                       ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_MUX                                                       ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_INV                                                       ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_CLSHIFT                                                   ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_CLSHIFT                                                   ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_XOR                                                       ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_MUX                                                       ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_ADD_SUB                                                   ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_ADD_SUB                                                   ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_OR                                                        ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_MUX                                                       ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_MUX                                                       ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; RAM: 2-PORT                                                   ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_MULT                                                      ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_XOR                                                       ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_CONSTANT                                                  ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_CONSTANT                                                  ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_OR                                                        ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_FF                                                        ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_FF                                                        ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_FF                                                        ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_MUX                                                       ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_FF                                                        ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_MUX                                                       ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_ADD_SUB                                                   ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_FF                                                        ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_MUX                                                       ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_ADD_SUB                                                   ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; LPM_MUX                                                       ; --                           ; --          ; --             ;
+; IP_TOOL_NAME                                   ; RAM: 1-PORT                                                   ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 12.1                                                          ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 9.0                                                           ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 12.1                                                          ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 9.0                                                           ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 12.1                                                          ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 12.1                                                          ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 12.1                                                          ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 12.1                                                          ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 12.1                                                          ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 12.1                                                          ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 12.1                                                          ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 9.0                                                           ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 12.1                                                          ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 12.1                                                          ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 9.0                                                           ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 12.1                                                          ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 9.0                                                           ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 9.0                                                           ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 9.0                                                           ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 9.0                                                           ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 9.0                                                           ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 9.0                                                           ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 9.0                                                           ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 9.0                                                           ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 9.0                                                           ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 9.0                                                           ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 9.0                                                           ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 9.0                                                           ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 9.0                                                           ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 9.0                                                           ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 9.0                                                           ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 9.0                                                           ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 9.0                                                           ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 9.0                                                           ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 9.0                                                           ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 9.0                                                           ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 9.0                                                           ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 9.0                                                           ; --                           ; --          ; --             ;
+; IP_TOOL_VERSION                                ; 9.0                                                           ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/ADD_SUB_wizard.bsf                                        ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/ADD_SUB_wizard_inst.vhd                                   ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/ADD_SUB_wizard.inc                                        ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/ADD_SUB_wizard.cmp                                        ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/AND_wizard.tdf                                            ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/AND_wizard.bsf                                            ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/AND_wizard_inst.tdf                                       ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/AND_wizard.inc                                            ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/AND_wizard.cmp                                            ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/AND_wizard_syn.v                                          ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/CMP_wizard.bsf                                            ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/CMP_wizard_inst.vhd                                       ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/CMP_wizard.inc                                            ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/CMP_wizard.cmp                                            ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/const_16.bsf                                              ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/const_16.inc                                              ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/const_16.cmp                                              ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/DIV_wizard.bsf                                            ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/DIV_wizard_inst.vhd                                       ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/DIV_wizard.inc                                            ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/DIV_wizard.cmp                                            ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/final_MUX_wizard.bsf                                      ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/final_MUX_wizard_inst.vhd                                 ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/final_MUX_wizard.inc                                      ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/final_MUX_wizard.cmp                                      ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/Ground.tdf                                                ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/Ground.bsf                                                ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/Ground_inst.tdf                                           ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/Ground.inc                                                ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/Ground.cmp                                                ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/MULT_wizard.bsf                                           ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/MULT_wizard_inst.vhd                                      ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/MULT_wizard.inc                                           ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/MULT_wizard.cmp                                           ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/MUX_2_1_1.bsf                                             ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/MUX_2_1_1_inst.vhd                                        ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/MUX_2_1_1.inc                                             ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/MUX_2_1_1.cmp                                             ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/MUX_31bits_wizard.bsf                                     ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/MUX_31bits_wizard_inst.vhd                                ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/MUX_31bits_wizard.inc                                     ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/MUX_31bits_wizard.cmp                                     ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/MUX_wizard.bsf                                            ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/MUX_wizard_inst.vhd                                       ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/MUX_wizard.inc                                            ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/MUX_wizard.cmp                                            ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/NOT_wizard.tdf                                            ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/NOT_wizard.bsf                                            ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/NOT_wizard.inc                                            ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/NOT_wizard.cmp                                            ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/ROTATE_wizard.bsf                                         ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/ROTATE_wizard_inst.vhd                                    ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/ROTATE_wizard.inc                                         ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/ROTATE_wizard.cmp                                         ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/SHIFT_wizard.bsf                                          ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/SHIFT_wizard_inst.vhd                                     ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/SHIFT_wizard.inc                                          ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/SHIFT_wizard.cmp                                          ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/XOR_wizard.tdf                                            ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/XOR_wizard.bsf                                            ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/XOR_wizard.inc                                            ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/XOR_wizard.cmp                                            ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/XOR_wizard_syn.v                                          ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/Wizard/MUX_1.cmp                                          ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; Datapath/add1.bsf                                             ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; Datapath/add2.bsf                                             ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/or32.bsf                                                  ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; Datapath/mux5.bsf                                             ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; Datapath/mux4_32.bsf                                          ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; memory/memory3.bsf                                            ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/mult1.bsf                                                 ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/xor1.bsf                                                  ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/const_30.bsf                                              ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/const_31.bsf                                              ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; ALU/OR5_1.bsf                                                 ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; RF/Register.tdf                                               ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; RF/Register.bsf                                               ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; RF/Register2.tdf                                              ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; RF/Register2.bsf                                              ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; RF/Register3.tdf                                              ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; RF/Register3.bsf                                              ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; Datapath/mux_31_2.bsf                                         ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; RF/Register4.tdf                                              ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; RF/Register4.bsf                                              ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; Datapath/mux_17_2.bsf                                         ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; Datapath/sub1.bsf                                             ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; RF/Register5.tdf                                              ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; RF/Register5.bsf                                              ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; memory/mux_32_3_1.bsf                                         ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; Coprocessor/Adder_normal.bsf                                  ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; Datapath/mux_1_2.bsf                                          ; --                           ; --          ; --             ;
+; MISC_FILE                                      ; memory/memory4.bsf                                            ; --                           ; --          ; --             ;
+; OPTIMIZE_HOLD_TIMING                           ; IO Paths and Minimum TPD Paths                                ; All Paths                    ; --          ; --             ;
+; PARTITION_COLOR                                ; 16764057                                                      ; --                           ; device      ; Top            ;
+; PARTITION_NETLIST_TYPE                         ; SOURCE                                                        ; --                           ; device      ; Top            ;
+; TOP_LEVEL_ENTITY                               ; device                                                        ; processor                    ; --          ; --             ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS             ; Off                                                           ; --                           ; --          ; eda_blast_fpga ;
++------------------------------------------------+---------------------------------------------------------------+------------------------------+-------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:03:47     ; 1.0                     ; 403 MB              ; 00:03:27                           ;
+; Fitter                    ; 00:06:43     ; 1.0                     ; 488 MB              ; 00:06:39                           ;
+; Assembler                 ; 00:00:11     ; 1.0                     ; 379 MB              ; 00:00:11                           ;
+; TimeQuest Timing Analyzer ; 00:00:54     ; 1.0                     ; 1384 MB             ; 00:00:51                           ;
+; EDA Netlist Writer        ; 00:00:10     ; 1.0                     ; 295 MB              ; 00:00:07                           ;
+; Total                     ; 00:11:45     ; --                      ; --                  ; 00:11:15                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                            ;
++---------------------------+------------------+---------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
++---------------------------+------------------+---------------+------------+----------------+
+; Analysis & Synthesis      ; SABAH5B82        ; Windows Vista ; 6.2        ; x86_64         ;
+; Fitter                    ; SABAH5B82        ; Windows Vista ; 6.2        ; x86_64         ;
+; Assembler                 ; SABAH5B82        ; Windows Vista ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; SABAH5B82        ; Windows Vista ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; SABAH5B82        ; Windows Vista ; 6.2        ; x86_64         ;
++---------------------------+------------------+---------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off processor -c processor
+quartus_fit --read_settings_files=off --write_settings_files=off processor -c processor
+quartus_asm --read_settings_files=off --write_settings_files=off processor -c processor
+quartus_sta processor -c processor
+quartus_eda --read_settings_files=off --write_settings_files=off processor -c processor
+
+
+
