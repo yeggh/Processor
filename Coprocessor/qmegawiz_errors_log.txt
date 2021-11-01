@@ -1,0 +1,86 @@
+
+
+C:/Users/X/Desktop/CA_peoject_sample/coprocessor_ALU/NOT_wizard.tdf
+
+Jul 31 12PM:44:13>: Megafunction LPM_INV is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/X/Desktop/CA_peoject_sample/coprocessor_ALU/NOT_wizard.tdf
+
+Jul 31 12PM:44:17>: Megafunction LPM_INV is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/X/Desktop/CA_peoject_sample/coprocessor_ALU/NOT_wizard.tdf
+
+Jul 31 12PM:44:32>: Megafunction LPM_INV is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/X/Desktop/CA_peoject_sample/coprocessor_ALU/NOT_wizard.tdf
+
+Jul 31 12PM:44:33>: Megafunction LPM_INV is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/X/Desktop/CA_peoject_sample/coprocessor_ALU/NOT_wizard.tdf
+
+Jul 31 12PM:44:44>: Megafunction LPM_INV is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/X/Desktop/CA_peoject_sample/coprocessor_ALU/NOT_wizard.tdf
+
+Jul 31 12PM:44:45>: Megafunction LPM_INV is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/X/Desktop/CA_peoject_sample/coprocessor_ALU/NOT_wizard.tdf
+
+Jul 31 12PM:44:45>: Megafunction LPM_INV is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/X/Desktop/CA_peoject_sample/coprocessor_ALU/NOT_wizard.tdf
+
+Jul 31 12PM:44:46>: Megafunction LPM_INV is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/X/Desktop/CA_peoject_sample/coprocessor_ALU/NOT_wizard.tdf
+
+Jul 31 12PM:44:54>: Megafunction LPM_INV is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/X/Desktop/CA_peoject_sample/coprocessor_ALU/NOT_wizard.tdf
+
+Jul 31 12PM:44:55>: Megafunction LPM_INV is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/X/Desktop/CA_peoject_sample/coprocessor_ALU/NOT_wizard.tdf
+
+Jul 31 12PM:44:56>: Megafunction LPM_INV is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/X/Desktop/CA_peoject_sample/coprocessor_ALU/NOT_wizard.tdf
+
+Jul 31 12PM:45:05>: Megafunction LPM_INV is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/X/Desktop/CA_peoject_sample/coprocessor_ALU/NOT_wizard.tdf
+
+Jul 31 12PM:45:13>: Megafunction LPM_INV is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/X/Desktop/CA_peoject_sample/coprocessor_ALU/NOT_wizard.tdf
+
+Jul 31 12PM:45:20>: Megafunction LPM_INV is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/X/Desktop/CA_peoject_sample/coprocessor_ALU/NOT_wizard.tdf
+
+Jul 31 12PM:45:24>: Megafunction LPM_INV is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/X/Desktop/CA_peoject_sample/coprocessor_ALU/NOT_wizard.tdf
+
+Jul 31 12PM:45:45>: Megafunction LPM_INV is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/X/Desktop/CA_peoject_sample/coprocessor_ALU/NOT_wizard.tdf
+
+Jul 31 12PM:45:47>: Megafunction LPM_INV is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
